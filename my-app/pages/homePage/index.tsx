@@ -22,7 +22,6 @@ import { ADD_STUDENT, BACK,
     SET_ITEM } from '../useReducer';
 import AddIcon from '@mui/icons-material/Add';
 import SaveIcon from '@mui/icons-material/Save';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import _ from 'lodash';
 
 
@@ -117,7 +116,7 @@ function HomePage() {
   return (
     <>
         <Navbar/>   
-        {/* <Box sx={{marginTop: "100px"}}>          */}
+        {/* <Box sx={{marginTop: "100px"}}> */}
             <Box sx={{ width: '100%', marginTop:"150px"}}>
                 <Paper sx={{ width: '70%', margin:"auto" }}>
                     <TableContainer>
@@ -129,7 +128,7 @@ function HomePage() {
                                 </TableCell>
                                 {nameList.map((e:any) => {
                                 return (
-                                    <TableCell key={e.name} align='right'>{e.name}</TableCell>
+                                    <TableCell key={e.id} align='right'>{e.name}</TableCell>
                                 )
                                 })}
                                 <TableCell align='right'>
